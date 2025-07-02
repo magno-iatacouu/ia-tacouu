@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA.TACOUU - Info Produtos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ccff;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      border: 2px solid #00ccff;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    .btn {
+      background-color: #00ccff;
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animação */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="fade-in">IA.TACOUU</h1>
+  <p class="subtitle fade-in">Explore soluções digitais com IA e suporte humano. Assine ou compre direto comigo.</p>
+
+  <!-- IMAGEM DINÂMICA -->
+  <img src="https://source.unsplash.com/featured/?technology,ai" alt="Produtos com IA" class="product-image fade-in" />
+
+  <!-- BOTÃO DE VENDA -->
+  <p style="text-align:center;" class="fade-in">
+    <a href="https://wa.me/qr/WWV2FYVPB6A3E1" target="_blank" class="btn">💬 Fale com a IA de Vendas no WhatsApp</a>
+  </p>
+
+  <footer class="fade-in">
+    <p>Programadores: Magno MB3 & Bia-IA 💡</p>
+    <p><a href="/">Voltar para a Home</a></p>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE -->
+  <a href="https://wa.me/qr/WWV2FYVPB6A3E1" target="_blank"
+     style="position:fixed; bottom:20px; right:20px; background:#00ccff; color:#000; padding:10px 15px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 0 10px #00ccff;">
+    💬 Fale com a IA
+  </a>
+
+</body>
+</html>
