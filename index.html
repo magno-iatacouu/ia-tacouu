@@ -11,7 +11,6 @@
       background-color: #111;
       color: #fff;
     }
-    /* Menu retrátil */
     .sidebar {
       height: 100%;
       width: 0;
@@ -87,7 +86,6 @@
       color: #aaa;
       margin-top: 40px;
     }
-
     @media (max-width: 600px) {
       .menu-btn { font-size: 24px; padding: 10px; }
     }
@@ -122,12 +120,16 @@
     </div>
 
     <!-- Anotações -->
-    <section style="margin-top:40px;">
-      <h2>Área de Anotações e Comandos</h2>
-      <textarea placeholder="Digite anotações, comandos, ou cole textos aqui..."></textarea>
-      <br><br>
-      <button onclick="exportarPDF()" class="btn btn-blue">Salvar como PDF</button>
-    </section>
+    <div style="display: flex; justify-content: center; margin-top: 40px;">
+      <section style="max-width: 800px; width: 100%;">
+        <h2 style="text-align: center;">Área de Anotações e Comandos</h2>
+        <textarea placeholder="Digite anotações, comandos, ou cole textos aqui..." style="height: 300px;"></textarea>
+        <br><br>
+        <div style="text-align: center;">
+          <button onclick="exportarPDF()" class="btn btn-blue">Salvar como PDF</button>
+        </div>
+      </section>
+    </div>
 
     <!-- Rodapé -->
     <footer>
