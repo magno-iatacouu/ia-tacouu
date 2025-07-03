@@ -16,21 +16,24 @@
     h1 {
       font-size: 2.5em;
       color: #00ccff;
+      text-align: center;
     }
 
     .subtitle {
       font-size: 1.2em;
       margin-bottom: 20px;
       color: #ccc;
+      text-align: center;
     }
 
     .product-image {
       width: 100%;
-      max-width: 800px;
-      border-radius: 10px;
+      max-width: 500px;
+      border-radius: 15px;
       border: 2px solid #00ccff;
+      box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
       display: block;
-      margin: 0 auto 20px auto;
+      margin: 30px auto;
     }
 
     .btn {
@@ -42,7 +45,16 @@
       font-size: 16px;
       text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
+      margin: 20px auto;
+      display: block;
+      text-align: center;
+      max-width: fit-content;
+    }
+
+    .btn:hover {
+      background-color: #0099cc;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
     }
 
     footer {
@@ -60,6 +72,19 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .subtitle {
+        font-size: 1em;
+      }
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -67,13 +92,9 @@
   <h1>IA.TACOUU</h1>
   <p class="subtitle">Explore soluções digitais com IA e suporte humano. Assine ou compre direto comigo.</p>
 
-  <!-- IMAGEM EMBUTIDA EM BASE64 -->
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAkGBxAQEBUQEBEVFRUQDxUPDw8PFRUVEBAPFREWFhURFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS8tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAwQFBgcCAf/EADwQAAEDAgMGBAQEBgEFAQAAAAEAAhEDIQQSMUEFE1FhBiIycYGRoQdCUsHR8RQjcoKSwdIVFjNTorLxFv/EABsBAAMBAQEBAQAAAAAAAAAAAAIDBAUBBgAH/8QALBEAAgIBAwIDBwUAAAAAAAAAAAECEQMSITEEE0FRBRQiMnGBkaGxwdHh8UL/2gAMAwEAAhEDEQA/AO6ooor0ZSqg1BJIFAGvM4+yKlDJqnJB+VNStNLOqluRB7dGlyUouoVeu3Rr5Z93jU6vl3HZZyUti11dOUYVow17XzF6beEVGGSzM4wKMgfcCg+FnzLQbyywb9Jh8O7aX6e1M1Kb13QrbRYQhRQ0WH3MQPoK9x2UMQ6EjRlmAk8I9azY8U8nmtKkXysrqRgyjF1UkrIxM7RQ4J96fjKSOgU91HhL0HU8kp3NkyZFEzUFMZ3pPRs49a+snw7ZRVMnaXAXFxjjkHYezH0qyTFbp0ypgRg1TuktyE9KmrxYqonDFMgj7ozEZHKnrTHqKORFSTHqv1oiG6QVVl2wMkf7Ww+hp8y/YoLgOYdnugxtynb/umJG4A/8D8a8xpktn0VULF+7t93HgE3ZYP2UlmAOAxccU+7chKxlT1ZuAqyzlYQfgCSOv5VjDGYhVEdxzjctIFQUyGpQFQU0A0tCimAoqVGTQjHpQ2ZFLVNNGTQIVNLQBS0U5GgCjNJRikAUUZFAFKSlxTAlNLzQJRRkUAVFWjIqRGTyVU9KdKTmDjJNUqcoIpKY5PI+NL3xUXJrYqRWTdJQyymUrkCoC0UlAgpKYFACkpaAEopKaAClpRTQAlFFFACUUZFABRRRQAlFFJQAUUlFABRRRQAUUlFAhRRkUEdFQUCFCvE4uVx0WoOblpsbWhUV05ZBgZVCMgYo90nTbvCGGbd5do2eSOqIg4+1aNEUOquNlJ6zqG4hHU2UVSxNmwAB3EvXqD3zT+E8FrKPGcywFtoiyNgMbZdSxDwBnHvVGsNvkV7MEXKOSG7eQFQxxmpaKNJnlmXAGmJwyj4VShyiqvJqsnKM0uYqlySl6VKDKjKglR8qopQT0A0ykpaUCClpKWgAooooAKKKKACiiigApKWkoAKSlpKACiiigApKSlAoAKSlFMBRRkUhDFKUqSokAxUZFACUUlFAhRRRQA//9k=" alt="Produtos com IA" class="product-image" />
+  <img src="https://magno-iatacouu.github.io/ia-tacouu/produtos-ia.jpg" alt="IA.tacouu robô" class="product-image" />
 
-  <!-- BOTÃO DE VENDA -->
-  <p style="text-align:center;">
-    <a href="https://wa.me/qr/WWV2FYVPB6A3E1" target="_blank" class="btn">💬 Fale com a IA de Vendas no WhatsApp</a>
-  </p>
+  <a href="https://wa.me/qr/WWV2FYVPB6A3E1" target="_blank" class="btn">💬 Fale com a IA de Vendas no WhatsApp</a>
 
   <footer>
     <p>Programadores: Magno MB3 & Bia-IA 💡</p>
