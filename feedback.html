@@ -44,7 +44,7 @@
 
   <div class="main-content">
     <h1>Deixe seu Feedback</h1>
-    <form action="https://formspree.io/f/meokdrrj" method="POST">
+    <form action="https://formspree.io/f/meokdrrj" method="POST" onsubmit="enviarFormulario(event)">
       <label for="nome">Seu nome:</label>
       <input type="text" id="nome" name="nome" required>
 
@@ -61,6 +61,30 @@
       <a href="/ia-tacouu/index.html">← Voltar para a Central</a>
     </p>
   </div>
+
+  <script>
+    function enviarFormulario(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.innerHTML = "<p>✅ Obrigado pelo seu feedback!</p>";
+        } else {
+          form.innerHTML = "<p>❌ Ocorreu um erro ao enviar. Tente novamente.</p>";
+        }
+      }).catch(error => {
+        form.innerHTML = "<p>❌ Erro de conexão. Tente novamente.</p>";
+      });
+    }
+  </script>
 
 </body>
 </html>
