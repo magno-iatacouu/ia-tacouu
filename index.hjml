@@ -61,25 +61,14 @@
     }
     .btn-blue { background: #00ccff; color: #000; }
     .btn-grey { background: #555; color: #fff; }
-    textarea, input[type="text"], input[type="email"] {
+    textarea {
       width: 100%;
+      height: 300px;
       background: #222;
       color: #fff;
       border: 1px solid #444;
       padding: 10px;
-      border-radius: 5px;
       font-size: 1em;
-    }
-    button {
-      padding: 10px 20px;
-      background:#00ccff;
-      color:#000;
-      border:none;
-      border-radius:5px;
-      cursor:pointer;
-    }
-    button:hover {
-      background:#00b8e6;
     }
     footer {
       text-align: center;
@@ -129,9 +118,6 @@
       <button onclick="exportarPDF()" class="btn btn-blue">Salvar como PDF</button>
     </section>
 
-<a href="feedback.html">Feedback</a>
-
-    <!-- Rodapé -->
     <footer>
       <p>Programadores: Magno MB3 & Bia-IA 💡</p>
       <p>
@@ -141,7 +127,7 @@
     </footer>
   </div>
 
-  <!-- Script para exportar PDF -->
+  <!-- Script opcional para exportar -->
   <script>
     function exportarPDF() {
       alert('Exportar PDF: Função ainda não implementada');
